@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  margin: auto;
+  height: 100vh;
+
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .card {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.font-card,
+.end-card {
+  position: relative;
+
+  width: 360px;
+  height: 220px;
+  margin: 10px;
+  background-image: linear-gradient(to right bottom, #040382, #50bdfc, #040382);
+  border-radius: 10px;
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.29);
+}
+
+.bank-name {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 25px;
+  color: white;
+  font-style: italic;
+  text-shadow: 1px 0 2px #000;
+}
+
+.logo-name {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-style: italic;
+  font-size: 25px;
+  color: white;
+  text-shadow: 1px 0 2px #000;
+}
+
+.card-chip-arrow {
+  border: 15px solid;
+  border-color: transparent #fff transparent transparent;
+  position: absolute;
+  top: 38%;
+  left: 6%;
+}
+
+.card-chip {
+  position: absolute;
+  width: 65px;
+  top: 30%;
+  left: 15%;
+}
+
+.card-number {
+  position: absolute;
+  top: 55%;
+  text-align: center;
+  font-size: 16px;
+  width: 100%;
+  color: white;
+  letter-spacing: 5px;
+  text-shadow: 1px 0 2px #000;
+}
+
+.date {
+  display: flex;
+  position: absolute;
+  top: 70%;
+  left: 40%;
+}
+
+.validdate {
+  text-transform: uppercase;
+  color: white;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.mm-yy {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.show-owner {
+  position: absolute;
+  top: 85%;
+  left: 5%;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: 1px 0 2px #000;
+}
+
+.circel-1 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 5%;
+  right: 7%;
+  background-color: #ef991a;
+  border-radius: 100%;
+}
+
+.circel-2 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 5%;
+  right: 13%;
+  background-color: #e4001a;
+  border-radius: 100%;
+}
+
+.bar {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  height: 40px;
+  background-color: black;
+}
+
+.sticker {
+  position: absolute;
+  top: 32%;
+  width: 80%;
+  height: 40px;
+  z-index: 1;
+}
+
+.card-whitebar {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 32.5%;
+  right: 10%;
+  width: 40px;
+  height: 30px;
+  background-color: white;
+  z-index: 0;
+}
+
+.card-detail-item {
+  position: absolute;
+  bottom: 4%;
+  margin: 10px;
+  text-align: justify;
+  color: white;
+  line-height: 15px;
+  font-size: 11px;
+}
+
+.detail-container {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  margin: auto;
+  line-height: 5.5rem;
+}
+
+.detail-owner-name,
+.detail-bank-name,
+.detail-card-number,
+.detail-year,
+.detail-cvc-code,
+.btn {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  color: #d8d8d8;
+  border: none;
+}
+
+.number-and-cvc {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #d8d8d8;
+  width: 100%;
+  color: #303030;
+  line-height: 2.35rem;
+  font-size: 1.3rem;
+  outline: 0;
+  /* เส้นขอบ 0  */
+}
+
+.pay {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #5d90e2;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+}

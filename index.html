@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Watch Store 3</title>
+    <link rel="stylesheet" href="stlye.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="font-card">
+          <p class="bank-name" id="show-bank">Bank name</p>
+          <p class="logo-name">Logo Here</p>
+          <div class="card-chip-arrow"></div>
+          <img
+            class="card-chip"
+            src="https://img.icons8.com/fluency/344/sim-card-chip.png"
+            alt=""
+          />
+          <p class="show-owner" id="show-name">Owner name</p>
+
+          <p class="card-number" id="show-number">0123 2345 5678 9000</p>
+          <div class="date">
+            <p class="validdate">
+              valid <br />
+              date
+            </p>
+            <p class="mm-yy">11/00</p>
+          </div>
+          <div class="circel-1"></div>
+          <div class="circel-2"></div>
+        </div>
+        <div class="end-card">
+          <div class="bar"></div>
+          <div class="sticker">
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+          </div>
+          <div class="card-whitebar">
+            <p class="show-cvc">543</p>
+          </div>
+          <div class="card-detail-item">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Repellendus sit repellat nesciunt libero tempora voluptatem, est
+              quidem, quis nulla ducimus at architecto consequatur illo laborum.
+              Quod distinctio et mollitia voluptates perferendis eligendi
+            </p>
+            <p>
+              orem ipsum dolor sit amet, consectetur adipisicing elit. Harum est
+              saepe ab distinctio, sit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="detail-container">
+        <div class="detail">
+          <div class="detail-owner-name">
+            <label for="">Owner Name</label>
+            <input type="text" id="owner-name" oninput="ownerName()" />
+          </div>
+          <div class="detail-bank-name">
+            <label for="">Bank Name</label>
+            <input type="text" id="bank-name" oninput="bankName()" />
+          </div>
+          <div class="detail-card-number">
+            <label for="">Card Number</label>
+            <input type="text" id="card-number" maxlength="16" />
+          </div>
+          <div class="number-and-cvc">
+            <div class="detail-year">
+              <label for="">MM/YY</label>
+              <input type="text" id="mm-yy" maxlength="4" />
+            </div>
+            <div class="detail-cvc-code">
+              <label for="">CVC Code</label>
+              <input type="text" id="cvc-card" maxlength="3" />
+            </div>
+          </div>
+          <div class="btn">
+            <button class="pay">Pay now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
